@@ -197,8 +197,13 @@ body, html {
 /* ============================= */
 @media (max-width: 768px) {
 
-  body {
-    overflow-y: auto;
+  body, html {
+    overflow: auto;
+  }
+
+  .desktop {
+    height: auto;
+    min-height: 100vh;
   }
 
   .right-layout {
@@ -208,29 +213,11 @@ body, html {
   }
 
   .left-layout,
-  .div {
-    position: relative;
-    width: 100%;
-    height: auto;
+  .conceptart,
+  .ESRB {
+    display: none;
   }
 
-  .conceptart{
-    position: relative;
-    rotate: 0deg;
-    width: 90%;
-    max-width: 400px;
-    margin: 1.5rem auto;
-    display: block;
-  }
-
-  .ESRB{
-    position: relative;
-    width: 120px;
-    margin: 1rem auto;
-    display: block;
-  }
-
-  
   .rectangle {
     height: 50vh;
   }
@@ -247,10 +234,10 @@ body, html {
 
   .upscale {
     width: 10vw;
-    left: 1rem;
   }
 
   .vector-upscale {
     width: 10vh;
+    height: 10vh;
   }
 }
